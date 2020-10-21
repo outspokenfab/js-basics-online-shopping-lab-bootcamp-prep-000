@@ -20,9 +20,9 @@ return item + " has been added to your cart.";
 function viewCart() {
   var cartContents = "In your cart, you have ";
   var i = 0;
-  if ( cart.length < 1){
+  if (cart.length < 1){
     return "Your shopping cart is empty.";
-  } else {
+  } else if(0 < cart.length < 2){
   for (i = 0; i < (cart.length); i++){
    cartContents = cartContents + cart.itemName[i] + " at $" + cart.itemPrice + ".";
   }
